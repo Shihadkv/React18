@@ -1,0 +1,29 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "This is for react pro coding",
+  "scripts": {
+    "start" : "parcel index.html",
+    "build" : "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shihadkv/React18.git"
+  },
+  "keywords": [],
+  "author": "Shihad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shihadkv/React18/issues"
+  },
+  "homepage": "https://github.com/Shihadkv/React18#readme",
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
