@@ -1,12 +1,4 @@
-import React from "react";
-import ReactDOM  from "react-dom/client";
-
-/**
- * 
- * 
- */ 
-
-const resList = [
+let resList = [
     {
      type: "restaurant",
      data: {
@@ -127,7 +119,7 @@ const resList = [
        },
        promoted: true,
        avgRating: "3.8",
-       totalRatings: 500,
+       totalRatings: 100,
        new: false,
      },
      subtype: "basic",
@@ -254,7 +246,7 @@ const resList = [
        },
        promoted: false,
        avgRating: "4.4",
-       totalRatings: 1000,
+       totalRatings: 100,
        new: false,
      },
      subtype: "basic",
@@ -389,7 +381,7 @@ const resList = [
        },
        promoted: false,
        avgRating: "3.8",
-       totalRatings: 5000,
+       totalRatings: 200,
        new: false,
      },
      subtype: "basic",
@@ -514,7 +506,7 @@ const resList = [
        },
        promoted: true,
        avgRating: "4.3",
-       totalRatings: 1000,
+       totalRatings: 150,
        new: false,
      },
      subtype: "basic",
@@ -649,7 +641,7 @@ const resList = [
        },
        promoted: false,
        avgRating: "3.8",
-       totalRatings: 1000,
+       totalRatings: 300,
        new: false,
      },
      subtype: "basic",
@@ -769,7 +761,7 @@ const resList = [
        },
        promoted: false,
        avgRating: "4.1",
-       totalRatings: 100,
+       totalRatings: 400,
        new: false,
      },
      subtype: "basic",
@@ -894,7 +886,7 @@ const resList = [
        },
        promoted: true,
        avgRating: "4.3",
-       totalRatings: 1000,
+       totalRatings: 380,
        new: false,
      },
      subtype: "basic",
@@ -1014,7 +1006,7 @@ const resList = [
        },
        promoted: false,
        avgRating: "4.1",
-       totalRatings: 1000,
+       totalRatings: 370,
        new: false,
      },
      subtype: "basic",
@@ -1133,7 +1125,7 @@ const resList = [
        },
        promoted: false,
        avgRating: "3.8",
-       totalRatings: 1000,
+       totalRatings: 379,
        new: false,
      },
      subtype: "basic",
@@ -1258,7 +1250,7 @@ const resList = [
        },
        promoted: true,
        avgRating: "4.3",
-       totalRatings: 100,
+       totalRatings: 239,
        new: false,
      },
      subtype: "basic",
@@ -1378,7 +1370,7 @@ const resList = [
        },
        promoted: false,
        avgRating: "4.1",
-       totalRatings: 1000,
+       totalRatings: 400,
        new: false,
      },
      subtype: "basic",
@@ -1891,67 +1883,4 @@ const resList = [
    },
  ];
 
-
-const Header = () => {
-    return (
-        <div className="header">
-            <div className="logo-container">
-                <img className="logo" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBx8fGAs9VucDW3oR0S-9Abms0oHPuz_mQaw&usqp=CAU"></img>
-            </div>
-            <div className="nav-items">
-                <ul>
-                    <li>Home</li>
-                    <li>About us</li>
-                    <li>Contact Us</li>
-                    <li>Cart</li>
-                </ul>
-            </div>
-        </div>
-    )
-}
-
-const RestaurantCard = (props) => {
-    const {resData} = props;
-    console.log(props)
-
-    const {name,cuisines, cloudinaryImageId } = resData?.data
-    return (
-        <div className="res-card">
-            <img  className = "res-logo" src = {"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + cloudinaryImageId }></img>
-            <h3> {name}</h3>
-            <h4>{cuisines.join(", ")}</h4>
-            
-        </div>
-    )
-
-}
-
-const Body = () => {
-    return (
-        <div className="body">
-            <div className="search">
-            </div>
-            <div className="res-container">
-                {
-                    resList.map((restaurant) => {
-                        return ( <RestaurantCard  resData = {restaurant}/>)
-                       
-                    })
-                }
-            </div>
-        </div>
-    )
-}
-
-const AppLayout = () =>{
-    return (
-        <div className="AppLayout">
-            <Header></Header>
-            <Body></Body>
-        </div>
-    )
-}
-
-
-const root = ReactDOM.createRoot(document.getElementById("root"))
-root.render(<AppLayout/>)
+ export default resList
