@@ -1,0 +1,18 @@
+/* Skeleton Container */
+.skeleton {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Skeleton Item (Placeholder) */
+  .skeleton-item {
+    background-color: #441fd6; /* Gray background color */
+    height: 20px; /* Height of each loading item */
+    width: 100%; /* Full width */
+    border-radius: 4px; /* Rounded corners */
+    
+  }
+  
+
+ 
